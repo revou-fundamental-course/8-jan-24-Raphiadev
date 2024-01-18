@@ -3,10 +3,10 @@ body {
 }
 header {
     text-align: center;
-}
-
-h1 {
-    background-color: #00ffff;
+    background-color: #D0D4CA;
+    max-width:100%;
+    margin-top: 0px auto;
+    border-radius: 5px;
 }
 
 .input {
@@ -37,12 +37,13 @@ button {
 }
 
 button:hover {
-    background-color: rgb(170, 112, 112);
+    background-color: #810000;
+    color: white;
 }
 
 button:active {
-    border-color: rgb(206, 166, 166);
-    transform: translateY(10px);
+    border-color: #5F6769;
+    transform: translateY(2px);
 }
 
 img {
@@ -54,39 +55,30 @@ img {
 
 }
 
-.K-keliling {
-    float: right;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 250px;
-    margin-left: 200px;
+.L-Grid{
+    float: left;
+    margin-left: 29%;
+    border: 1px solid black;
+    outline-offset: 5px;
+    padding-inline: 15px;
 }
 
-.L-luas {
-    float: left;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 200px;
-    margin-right: 250px;
+
+.K-Grid{
+    float: right;
+    margin-right: 35%;
+    border: 1px solid black;
+    outline-offset: 5px;
 }
 
-  .Luas {
-    text-align: center;
-    justify-content: space-around;
-    position: relative;
-    float: left;
-    display: block;
-    margin-left: 200px;
-    margin-right: 250px;
-  }
+.judul-luas{
+    background-color: #E6E6E6;
+    outline-offset: 5px;
+    border-radius: 5px;
+}
 
-  .Keliling {
-    text-align: center;
-    justify-content: space-around;
-    position: relative;
-    float: right;
-    display: block;
-    margin-left: 250px;
-    margin-right: 200px;
-  }
+
+.judul-keliling{
+    background-color: #E6E6E6;
+    border-radius: 5px;
+}

@@ -3,47 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="Asset/icon.img">
 </head>
 <body>
-    <header>
-        <h1>Kalkulator Luas Dan Keliling Persegi</h1>
-        <h4>Welcome to kalkulator Luas dan Keliling Persegi </h4>
+    <script src="js/script.js"></script>
+    
+    <column align="center">    
+    <h1>Welcome to Kalkulator</h1>
+    <p>Kalkulator Luas Dan Keliling Persegi</p>
+    <p>By Ravi Achmad Fadilah</p>
+    </column>
+    <header>    
+        <h4>Welcome to kalkulator Luas dan Keliling Persegi </h4> 
         <p>Web ini di gunakan untuk menghitung Luas dan Keliling Persegi</p>
+    
     </header>
-    <div class="L-luas">
-    <img src="Asset/persegi.img">
-</div>
-    <div class="K-keliling">
-    <img src="Asset/persegi.img">
-</div>
+    <br><br>
 
-    <div class="Luas">
+<table class="L-Grid" height="50%">
+    <div class="L-luas">
+    <tr>
+        <th><h2 class="judul-luas">Luas Persegi</h2></th>
+    </tr>
+    <tr> <td>
+    <img src="Asset/persegi.img" alt="">
+</div>
+    
+    <div class="Luas" id="tes">
     <div class="input">
-        <p>Hitung Luas Persegi <input type="text" id="s1"> </p>
-    <p>L = S x S</p>
-    <p>L = <span id="s2"></span> x <span id="s3"></span></p>
-    <p>L = <span id="luas"></span></p>
+        <label for="side" id="labelSide" ><b>Hitung Luas Persegi</b></label>
+        <input type="number" name="side" id="first" placeholder="Input Nilai">
     </div>
 
     <div class="button">
-        <button id="">Hitung</button>
-        <button id="">Reset</button>
+        <button id="" onclick="square()">Hitung</button>
+        <button id="" type="reset" onclick="fun1()" value="reset"> Reset</button>
+
+        <div id="num"></div>
     </div>
     </div>
+    </div>
+    </table>
+
+
+    
+   <div class="K-Grid">
+    <table>
+        <tr>
+            <th><h2 class="judul-keliling">  Keliling Persegi   </h2></th>
+        </tr>
+        <tr>
+        <th>
+    <div class="K-keliling">
+        <img src="Asset/persegi.img" alt="">
+    </div>   
+</td> 
 
     <div class="Keliling">
         <div class="input">
             <label for="side" id="labelSide" >Hitung Keliling Persegi</label>
-            <input type="number" id="side">
+            <input type="number" name="sisi" id="second" placeholder="Input Nilai">
         </div>
     
         <div class="button">
-            <button id="">Hitung</button>
-            <button id="">Reset</button>
+            <button id="" onclick="keliling()">Hitung</button>
+            <button id="r-button" name="click" onclick="fun2()" value="reset">Reset</button>
+
+            <div id="num1"></div>
+
         </div>
         </div>
+        </div>
+        </th>
+        </tr>
+    </table>
 </body>
-<script src="js/script.js"></script>
 </html>
